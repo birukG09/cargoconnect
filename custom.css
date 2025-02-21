@@ -1,0 +1,247 @@
+/* Custom styles for CargoConnect */
+
+/* Card hover effect */
+.card {
+    transition: transform 0.2s ease-in-out;
+    color: var(--bs-light);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Map containers */
+#map, #tracking-map {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Status badges */
+.badge {
+    font-size: 0.9em;
+    padding: 0.5em 0.7em;
+}
+
+/* Responsive tables */
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* Form styling */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-info-rgb), 0.25);
+}
+
+/* Navbar brand */
+.navbar-brand i {
+    margin-right: 0.5rem;
+}
+
+/* Dashboard cards */
+.card .display-4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+/* Authentication forms */
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Booking details */
+.booking-details strong {
+    color: var(--bs-info);
+}
+
+/* Admin dashboard stats */
+.stats-card {
+    background: linear-gradient(45deg, var(--bs-dark), var(--bs-secondary));
+    border: none;
+}
+
+/* Carousel styling */
+.carousel {
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.carousel:hover .carousel-item img {
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    bottom: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px);
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-caption .btn {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators {
+    bottom: 1.5rem;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--bs-primary);
+    transform: scale(1.2);
+}
+
+/* Service cards */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background: var(--bs-dark);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+}
+
+.service-card .card-body {
+    padding: 1.5rem;
+}
+
+.service-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--bs-light);
+}
+
+.service-card .card-text {
+    color: var(--bs-gray-300);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Dashboard text colors */
+.text-muted {
+    color: var(--bs-gray-300) !important;
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--bs-light);
+}
+
+/* Booking card text */
+.card-subtitle {
+    color: var(--bs-gray-300) !important;
+}
+
+.card-text {
+    color: var(--bs-gray-300);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+
+    .carousel-caption {
+        padding: 1.5rem;
+        bottom: 2rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 1rem;
+        padding: 0.4rem 1.5rem;
+    }
+
+    .service-card .card-img-top {
+        height: 160px;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        position: relative;
+        background: var(--bs-dark);
+        border-radius: 0;
+        transform: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+}
