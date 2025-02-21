@@ -1,0 +1,46 @@
+import requests
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+# Chapa API Credentials
+CHAPA_API_KEY = "your_chapa_api_key"
+CHAPA_BASE_URL = "https://api.chapa.co/v1/transaction/initialize"
+
+# Telebirr API Credentials
+TELEBIRR_APP_KEY = "your_telebirr_app_key"
+TELEBIRR_PUBLIC_KEY = "your_telebirr_public_key"
+TELEBIRR_NOTIFY_URL = "your_notify_url"
+TELEBIRR_BASE_URL = "https://api.telebirr.com/payment"
+
+@app.route('/pay/chapa', methods=['POST'])
+def pay_with_chapa():
+    data = request.json
+    payload = {
+        "amount": data.get("amount"),
+        "currency": "ETB",
+        "email": data.get("email"),
+        "tx_ref": data.get("tx_ref"),
+        "callback_url": data.get("callback_url"),
+    }
+    headers = {"Authorization": f"Bearer {CHAPA_API_KEY}", "Content-Type": "application/json"}
+    response = requests.post(CHAPA_BASE_URL, json=payload, headers=headers)
+    return jsonify(response.json())
+
+@app.route('/pay/telebirr', methods=['POST'])
+def pay_with_telebirr():
+    data = request.json
+    payload = {
+        "appKey": TELEBIRR_APP_KEY,
+        "publicKey": TELEBIRR_PUBLIC_KEY,
+        "notifyUrl": TELEBIRR_NOTIFY_URL,
+        "outTradeNo": data.get("order_id"),
+        "totalAmount": data.get("amount"),
+        "subject": "Payment for order",
+    }
+    headers = {"Content-Type": "application/json"}
+    response = requests.post(TELEBIRR_BASE_URL, json=payload, headers=headers)
+    return jsonify(response.json())
+
+if __name__ == '__main__':
+    app.run(debug=True)
