@@ -36,7 +36,18 @@
 - Payment Gateway: chapa / telebirr/  / cbe 
 - Authentication: JWT / OAuth 2.0  
 - Hosting: AWS / Azure / DigitalOcean  
-🚛 — Truck (Cargo Transport)
+   (Cargo Transport) 🚛  — Truck (Large Freight Truck)
+🚚  — Delivery Truck
+🚐  — Van / Shuttle
+🚒  — Heavy Vehicle (can represent emergency or heavy-duty transport)
+🚜  — Tractor (Agricultural Transport)
+🛻  — Pickup Truck
+🚢  — Cargo Ship / Freighter
+✈️  — Airplane (General Air Freight)
+🛩️  — Small Airplane / Charter Cargo
+🚂  — Locomotive (Heavy Rail)
+🛰️  — Satellite (for GPS Tracking Systems)
+
 
 📦 — Package (Cargo)
 
@@ -46,10 +57,12 @@
 
 🚚 — Delivery Truck
 
-🏥 — Medical / Hospital
+🏥 — Medical / HEAVY Bio Medical and pharmaceuticals
 
-🛄 — Airport Luggage
+🛄 — Airport Luggage distribution
 
-🌡️ — Temperature-sensitive
+🌡️ — Temperature-sensitive and shock absorbtion scalibng 
+🛠️ — Hardware Control
+
 
 
