@@ -37,5 +37,5 @@
 - Authentication: JWT / OAuth 2.0  
 - Hosting: AWS / Azure / DigitalOcean  
 
----
+
 
