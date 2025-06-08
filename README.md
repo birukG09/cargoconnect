@@ -36,6 +36,20 @@
 - Payment Gateway: chapa / telebirr/  / cbe 
 - Authentication: JWT / OAuth 2.0  
 - Hosting: AWS / Azure / DigitalOcean  
+🚛 — Truck (Cargo Transport)
 
+📦 — Package (Cargo)
+
+🏗️ — Construction / Machinery
+
+⚙️ — Gear (Machinery / Engineering)
+
+🚚 — Delivery Truck
+
+🏥 — Medical / Hospital
+
+🛄 — Airport Luggage
+
+🌡️ — Temperature-sensitive
 
 
