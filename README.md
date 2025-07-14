@@ -25,7 +25,7 @@
 - Specialized handling and safety protocols for medical, construction, and airport cargo  
 - Notifications for status updates to senders and drivers  
 - Separate dashboards for senders, transporters, and admin  
-![image alt](
+![image alt](https://github.com/birukG09/cargoconnect/blob/b5fe18664f5034d0615f623b9bb76d81fd643b26/Screenshot%20(67).png)
 ---
 
 ## 🛠️ Technology Stack
