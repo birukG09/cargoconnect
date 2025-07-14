@@ -1,4 +1,4 @@
-![image alt](
+![image alt](https://github.com/birukG09/cargoconnect/blob/9f7057c298ae30ce9ce11dc2792521f0da192e03/Screenshot%20(73).png)
 # cargoconnect# Cargo Connect Delivery System
 
 **Cargo Connect** is an express cargo delivery platform designed to transport a wide variety of goods including perishable, fragile, temperature-sensitive items, general cargo, luggage, heavy machinery, construction materials, medical supplies, and airport luggage. Inspired by Uber’s on-demand model, it connects farmers, miners, businesses, and individuals with nearby transporters for seamless, real-time delivery and tracking — all with special care where needed.
