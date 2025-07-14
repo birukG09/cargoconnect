@@ -16,7 +16,7 @@
   - Heavy machinery and mining equipment  
   - Construction materials  
   - Medical supplies requiring special care  
-![image alt](
+![image alt](https://github.com/birukG09/cargoconnect/blob/c8861fd0826f9b4f09677b6c081a70536c1861c1/Screenshot%20(61).png)
 
 - Real-time geospatial tracking with live GPS updates  
 - Dynamic pricing based on cargo type, weight, distance, and urgency  
